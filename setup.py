@@ -12,7 +12,7 @@ with open('requirements.txt') as reqs:
 
 setup(
     name='crowdin-cli-py',
-    version='0.95.6',
+    version='0.95.7',
     author='PaulGregor',
     author_email='comixan@gmail.com',
     packages=['crowdin'],

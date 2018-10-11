@@ -364,6 +364,8 @@ class Connection(Configuration):
         valid_url += self.url['url_par3']
         if self.url['url_par4']:
             valid_url += '?key=' + self.get_api_key()
+            if 'branch' in self.params:
+                valid_url += '&branch=%s' % self.params['branch']
         headers = {
             'User-Agent': 'crowdin-cli-py v.{0}'.format(__version__),
         }
